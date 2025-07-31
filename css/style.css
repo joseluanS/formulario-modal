@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Bitcount Single";
+}
+
+html,body{
+    height:100%;
+}
+
+.bitcount-single-custom {
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.botaoEnviar input[type=submit]{
+    width:80%;
+    max-width:350px;
+    height:80px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border:0;
+    background-color:blanchedalmond;
+    border-radius:10px;
+    font-size:30px;
+    cursor:pointer;
+    text-transform:uppercase;
+    transform:translate(-50%,-50%);
+}
+
+#novaJanela{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    z-index:1;
+}
+
+#novaJanela .form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:400px;
+    height:550px;
+    background-color:white;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    padding:80px 2%;
+    border:5px solid rgb(152, 150, 150);
+}
+
+#novaJanela form input[type=submit]{
+    width:100%;
+    max-width:300px;
+    height:30px;
+    border:0;
+    background-color:blanchedalmond;
+    border-radius:10px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+#novaJanela form input{
+    width:100%;
+    max-width:300px;
+    margin-bottom:35px;
+    height:55px;
+    padding-left:5px;
+    outline:0;
+    font-size:15px;
+    border:1px solid #ccc;
+}
+
+#botaofechar{
+    width:30px;
+    height:30px;
+    background-color:rgb(152, 150, 150);
+    border-radius:15px;
+    color:white;
+    line-height:30px;
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+}
+
+.erro-input{
+    border:2px solid red !important; /*Borda vermelha para o campo inválido*/
+}
+
+.mensagem-erro{
+    color:red;
+    font-size:14px;
+    margin-bottom:10px;
+    text-align:left;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
